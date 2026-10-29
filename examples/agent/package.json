@@ -1,0 +1,9 @@
+{
+  "name": "wifgate-agent-example",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "tsx src/agent.ts", "typecheck": "tsc --noEmit" },
+  "dependencies": { "viem": "^2.21.0", "wifgate": "*" },
+  "devDependencies": { "@types/node": "^22.0.0", "tsx": "^4.19.0", "typescript": "^5.6.0" }
+}

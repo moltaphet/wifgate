@@ -1,0 +1,16 @@
+{
+  "name": "wifgate-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "contracts:test": "cd contracts && forge test",
+    "build": "npm run build -w wifgate",
+    "test": "npm run test -w wifgate",
+    "typecheck": "npm run typecheck -w wifgate && npm run typecheck -w wifgate-demo-api && npm run typecheck -w wifgate-agent-example",
+    "demo:local": "npm run build -w wifgate && npx tsx examples/local-demo/run.ts"
+  }
+}
